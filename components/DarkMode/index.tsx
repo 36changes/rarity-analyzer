@@ -6,7 +6,7 @@ const DarkModeToggle = () => {
 	const { theme, setTheme } = useTheme();
 	React.useEffect(() => setMounted(true), []);
 	const handleClick = () => {
-		const nextTheme = theme === "dark" ? "light" : "dark";
+		const nextTheme = theme === "light" ? "dark" : "light";
 		setTheme(nextTheme);
 	};
 	return (
